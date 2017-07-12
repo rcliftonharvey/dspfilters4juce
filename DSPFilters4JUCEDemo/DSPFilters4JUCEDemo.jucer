@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="dfQko1" name="DSPFilters4JUCEDemo" projectType="audioplug"
+              version="1.0.0" bundleIdentifier="com.yourcompany.DSPFilters4JUCEDemo"
+              includeBinaryInAppConfig="1" buildVST="1" buildVST3="0" buildAU="0"
+              buildAUv3="0" buildRTAS="0" buildAAX="0" pluginName="DSPFilters4JUCEDemo"
+              pluginDesc="DSPFilters4JUCEDemo" pluginManufacturer="yourcompany"
+              pluginManufacturerCode="Manu" pluginCode="Dfqk" pluginChannelConfigs="{2,2},{1,1}"
+              pluginIsSynth="0" pluginWantsMidiIn="0" pluginProducesMidiOut="0"
+              pluginIsMidiEffectPlugin="0" pluginEditorRequiresKeys="1" pluginAUExportPrefix="DSPFilters4JUCEDemoAU"
+              pluginRTASCategory="" aaxIdentifier="com.yourcompany.DSPFilters4JUCEDemo"
+              pluginAAXCategory="AAX_ePlugInCategory_Dynamics" jucerVersion="4.3.0"
+              companyWebsite="https://github.com/rcliftonharvey/dspfilters4juce">
+  <MAINGROUP id="hc7Ymx" name="DSPFilters4JUCEDemo">
+    <GROUP id="{A08106BA-B99E-0FE4-3AD2-F15A1A9AA852}" name="DSPFilters4JUCE">
+      <GROUP id="{4B016874-4292-F9A4-C1A1-6C114F419213}" name="Templates">
+        <GROUP id="{68E539D5-C695-1D13-FDC5-751BEC80B6F5}" name="Shared">
+          <FILE id="NIMCaD" name="Biquad.h" compile="0" resource="0" file="../DSPFilters4JUCE/Templates/Shared/Biquad.h"/>
+          <FILE id="aKiAT0" name="Cascade.h" compile="0" resource="0" file="../DSPFilters4JUCE/Templates/Shared/Cascade.h"/>
+          <FILE id="xqCGcF" name="Common.h" compile="0" resource="0" file="../DSPFilters4JUCE/Templates/Shared/Common.h"/>
+          <FILE id="tr7rme" name="Layout.h" compile="0" resource="0" file="../DSPFilters4JUCE/Templates/Shared/Layout.h"/>
+          <FILE id="odiaIn" name="MathSupplement.h" compile="0" resource="0"
+                file="../DSPFilters4JUCE/Templates/Shared/MathSupplement.h"/>
+          <FILE id="wriro3" name="PoleFilter.h" compile="0" resource="0" file="../DSPFilters4JUCE/Templates/Shared/PoleFilter.h"/>
+          <FILE id="jVeaEX" name="RootFinder.h" compile="0" resource="0" file="../DSPFilters4JUCE/Templates/Shared/RootFinder.h"/>
+          <FILE id="uQM12K" name="State.h" compile="0" resource="0" file="../DSPFilters4JUCE/Templates/Shared/State.h"/>
+          <FILE id="stwHqj" name="Types.h" compile="0" resource="0" file="../DSPFilters4JUCE/Templates/Shared/Types.h"/>
+          <FILE id="vGsDT1" name="Utilities.h" compile="0" resource="0" file="../DSPFilters4JUCE/Templates/Shared/Utilities.h"/>
+        </GROUP>
+        <FILE id="xPWXMa" name="_Templates.h" compile="0" resource="0" file="../DSPFilters4JUCE/Templates/_Templates.h"/>
+        <FILE id="Q2UWV0" name="Bessel.h" compile="0" resource="0" file="../DSPFilters4JUCE/Templates/Bessel.h"/>
+        <FILE id="qLPVVW" name="Butterworth.h" compile="0" resource="0" file="../DSPFilters4JUCE/Templates/Butterworth.h"/>
+        <FILE id="yAPuZy" name="ChebyshevI.h" compile="0" resource="0" file="../DSPFilters4JUCE/Templates/ChebyshevI.h"/>
+        <FILE id="lt8QOn" name="ChebyshevII.h" compile="0" resource="0" file="../DSPFilters4JUCE/Templates/ChebyshevII.h"/>
+        <FILE id="Euy607" name="Elliptic.h" compile="0" resource="0" file="../DSPFilters4JUCE/Templates/Elliptic.h"/>
+        <FILE id="xzBwUZ" name="Legendre.h" compile="0" resource="0" file="../DSPFilters4JUCE/Templates/Legendre.h"/>
+        <FILE id="LThCgs" name="RBJ.h" compile="0" resource="0" file="../DSPFilters4JUCE/Templates/RBJ.h"/>
+      </GROUP>
+      <GROUP id="{EE0E76D4-AEE2-C5C3-4AFA-BC37869CCF2A}" name="Wrappers">
+        <FILE id="iBv3HO" name="_Wrappers.h" compile="0" resource="0" file="../DSPFilters4JUCE/Wrappers/_Wrappers.h"/>
+        <FILE id="pdDgKJ" name="Bessel.h" compile="0" resource="0" file="../DSPFilters4JUCE/Wrappers/Bessel.h"/>
+        <FILE id="CUnVRm" name="Butterworth.h" compile="0" resource="0" file="../DSPFilters4JUCE/Wrappers/Butterworth.h"/>
+        <FILE id="sqGrBA" name="ChebyshevI.h" compile="0" resource="0" file="../DSPFilters4JUCE/Wrappers/ChebyshevI.h"/>
+        <FILE id="J1tENY" name="ChebyshevII.h" compile="0" resource="0" file="../DSPFilters4JUCE/Wrappers/ChebyshevII.h"/>
+        <FILE id="bR9Wu6" name="Elliptic.h" compile="0" resource="0" file="../DSPFilters4JUCE/Wrappers/Elliptic.h"/>
+        <FILE id="g4Yh4T" name="Legendre.h" compile="0" resource="0" file="../DSPFilters4JUCE/Wrappers/Legendre.h"/>
+        <FILE id="jyFn8a" name="RBJ.h" compile="0" resource="0" file="../DSPFilters4JUCE/Wrappers/RBJ.h"/>
+        <FILE id="L3MGUC" name="RBJArray.h" compile="0" resource="0" file="../DSPFilters4JUCE/Wrappers/RBJArray.h"/>
+        <FILE id="YNGfLi" name="Wrappers.h" compile="0" resource="0" file="../DSPFilters4JUCE/Wrappers/Wrappers.h"/>
+      </GROUP>
+      <FILE id="nJu2hT" name="DSPFilters.h" compile="0" resource="0" file="../DSPFilters4JUCE/DSPFilters.h"/>
+    </GROUP>
+    <GROUP id="{A4175235-1FC6-E87A-479C-7056F185E6FD}" name="Source">
+      <FILE id="kFA5o8" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="D0quzo" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="BtI0cw" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="vlGwma" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="DSPFilters4JUCEDemo"
+                       osxSDK="default" osxCompatibility="10.7 SDK" osxArchitecture="64BitUniversal"
+                       cppLanguageStandard="c++11" cppLibType="libc++"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="DSPFilters4JUCEDemo"
+                       osxSDK="default" osxCompatibility="10.7 SDK" osxArchitecture="64BitUniversal"
+                       cppLanguageStandard="c++11" cppLibType="libc++" linkTimeOptimisation="1"
+                       stripLocalSymbols="1"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="..\..\..\..\..\..\Development\SDKs\JUCE4\modules"/>
+        <MODULEPATH id="juce_events" path="..\..\..\..\..\..\Development\SDKs\JUCE4\modules"/>
+        <MODULEPATH id="juce_graphics" path="..\..\..\..\..\..\Development\SDKs\JUCE4\modules"/>
+        <MODULEPATH id="juce_data_structures" path="..\..\..\..\..\..\Development\SDKs\JUCE4\modules"/>
+        <MODULEPATH id="juce_gui_basics" path="..\..\..\..\..\..\Development\SDKs\JUCE4\modules"/>
+        <MODULEPATH id="juce_gui_extra" path="..\..\..\..\..\..\Development\SDKs\JUCE4\modules"/>
+        <MODULEPATH id="juce_cryptography" path="..\..\..\..\..\..\Development\SDKs\JUCE4\modules"/>
+        <MODULEPATH id="juce_video" path="..\..\..\..\..\..\Development\SDKs\JUCE4\modules"/>
+        <MODULEPATH id="juce_opengl" path="..\..\..\..\..\..\Development\SDKs\JUCE4\modules"/>
+        <MODULEPATH id="juce_audio_basics" path="..\..\..\..\..\..\Development\SDKs\JUCE4\modules"/>
+        <MODULEPATH id="juce_audio_devices" path="..\..\..\..\..\..\Development\SDKs\JUCE4\modules"/>
+        <MODULEPATH id="juce_audio_formats" path="..\..\..\..\..\..\Development\SDKs\JUCE4\modules"/>
+        <MODULEPATH id="juce_audio_processors" path="..\..\..\..\..\..\Development\SDKs\JUCE4\modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="..\..\..\..\..\..\Development\SDKs\JUCE4\modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+    <VS2013 targetFolder="Builds/VisualStudio2013" toolset="">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug 32" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="1" optimisation="1" targetName="DSPFilters4JUCEDemo"/>
+        <CONFIGURATION name="Release 32" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="0" optimisation="3" targetName="DSPFilters4JUCEDemo"/>
+        <CONFIGURATION name="Debug 64" winWarningLevel="4" generateManifest="1" winArchitecture="x64"
+                       isDebug="1" optimisation="1" targetName="DSPFilters4JUCEDemo"/>
+        <CONFIGURATION name="Release 64" winWarningLevel="4" generateManifest="1" winArchitecture="x64"
+                       isDebug="0" optimisation="3" targetName="DSPFilters4JUCEDemo"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_video" path="../../juce"/>
+        <MODULEPATH id="juce_opengl" path="../../juce"/>
+        <MODULEPATH id="juce_gui_extra" path="../../juce"/>
+        <MODULEPATH id="juce_gui_basics" path="../../juce"/>
+        <MODULEPATH id="juce_graphics" path="../../juce"/>
+        <MODULEPATH id="juce_events" path="../../juce"/>
+        <MODULEPATH id="juce_data_structures" path="../../juce"/>
+        <MODULEPATH id="juce_cryptography" path="../../juce"/>
+        <MODULEPATH id="juce_core" path="../../juce"/>
+        <MODULEPATH id="juce_audio_processors" path="../../juce"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../juce"/>
+        <MODULEPATH id="juce_audio_formats" path="../../juce"/>
+        <MODULEPATH id="juce_audio_devices" path="../../juce"/>
+        <MODULEPATH id="juce_audio_basics" path="../../juce"/>
+      </MODULEPATHS>
+    </VS2013>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_video" showAllCode="1" useLocalCopy="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_QUICKTIME="disabled"/>
+</JUCERPROJECT>
