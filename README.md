@@ -4,9 +4,9 @@
 
 ## Index
 
-1. [Description](https://github.com/rcliftonharvey/dspfilters4juce/blob/master/README.md#description)
+1. [Introduction](https://github.com/rcliftonharvey/dspfilters4juce/blob/master/README.md#introduction)
 2. [Important](https://github.com/rcliftonharvey/dspfilters4juce/blob/master/README.md#important)
-3. [Introduction](https://github.com/rcliftonharvey/dspfilters4juce/blob/master/README.md#introduction)
+3. [Description](https://github.com/rcliftonharvey/dspfilters4juce/blob/master/README.md#description)
 4. [How to use](https://github.com/rcliftonharvey/dspfilters4juce/blob/master/README.md#how-to.use)
 5. [Example project](https://github.com/rcliftonharvey/dspfilters4juce/blob/master/README.md#example-project)
 6. [Notes](https://github.com/rcliftonharvey/dspfilters4juce/blob/master/README.md#notes)
@@ -15,7 +15,7 @@
 
 -------------------------------------------------------------------------------------------------------
 
-## Description 
+## Introduction 
 
 This is a powerful filter library which implements all standard IIR filters such as Bessel, Butterworth, Elliptic and Chebychev. The data format is floating-point throughout.
 
@@ -38,7 +38,7 @@ I created his version of **DSPFilters** to be used with the [JUCE](https://www.j
 
 -------------------------------------------------------------------------------------------------------
 
-## Introduction
+## Description
 
 The Vinnie Falco and Bernd Porr versions were fine, but the filters needed to be calculated on a per-sample basis, which I am not a fan of. Having *for-every-channel* and *for-every-sample* loops over and over in ***processBlock*** is just clutter in the one place where there shouldn't be any clutter.
 
