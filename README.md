@@ -1,5 +1,19 @@
 # DSPFilters for JUCE
 
+-------------------------------------------------------------------------------------------------------
+
+## Index
+
+1. [Description](https://github.com/rcliftonharvey/dspfilters4juce/blob/master/README.md#description)
+2. [Important](https://github.com/rcliftonharvey/dspfilters4juce/blob/master/README.md#important)
+3. [Introduction](https://github.com/rcliftonharvey/dspfilters4juce/blob/master/README.md#introduction)
+4. [How to use](https://github.com/rcliftonharvey/dspfilters4juce/blob/master/README.md#how-to.use)
+5. [Example project](https://github.com/rcliftonharvey/dspfilters4juce/blob/master/README.md#example-project)
+6. [Notes](https://github.com/rcliftonharvey/dspfilters4juce/blob/master/README.md#notes)
+7. [Licence](https://github.com/rcliftonharvey/dspfilters4juce/blob/master/README.md#licence)
+8. [Credits](https://github.com/rcliftonharvey/dspfilters4juce/blob/master/README.md#credits)
+
+-------------------------------------------------------------------------------------------------------
 
 ## Description 
 
@@ -129,11 +143,17 @@ If you plan on using this and one of the formers in the same project, then be su
 The source code is provided under the [MIT License](https://en.wikipedia.org/wiki/MIT_License).
 A copy of the MIT license in written form comes in the download of this library.
 
-The original **DSP Filters** library is Copyright &copy; 2009 by Vinnie Falco
-The **Linux** adaptation of it is Copyright &copy; 2012 by Bernd Porr
-This **JUCE** optimized version is Copyright &copy; 2017 Rob Clifton-Harvey
-
 The JUCE framework itself is licenses separately, see the [JUCE website](https://juce.com) for more information.
+
+-------------------------------------------------------------------------------------------------------
+
+## Credits
+
+The original **DSP Filters** library is Copyright &copy; 2009 by Vinnie Falco
+
+The **Linux** adaptation of it is Copyright &copy; 2012 by Bernd Porr
+
+This **JUCE** optimized version is Copyright &copy; 2017 Rob Clifton-Harvey
 
 -------------------------------------------------------------------------------------------------------
 
