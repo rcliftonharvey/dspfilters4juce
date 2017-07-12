@@ -7,7 +7,7 @@
 1. [Introduction](https://github.com/rcliftonharvey/dspfilters4juce/blob/master/README.md#introduction)
 2. [Important](https://github.com/rcliftonharvey/dspfilters4juce/blob/master/README.md#important)
 3. [Description](https://github.com/rcliftonharvey/dspfilters4juce/blob/master/README.md#description)
-4. [How to use](https://github.com/rcliftonharvey/dspfilters4juce/blob/master/README.md#how-to.use)
+4. [How to use](https://github.com/rcliftonharvey/dspfilters4juce/blob/master/README.md#how-to-use)
 5. [Example project](https://github.com/rcliftonharvey/dspfilters4juce/blob/master/README.md#example-project)
 6. [Notes](https://github.com/rcliftonharvey/dspfilters4juce/blob/master/README.md#notes)
 7. [License](https://github.com/rcliftonharvey/dspfilters4juce/blob/master/README.md#license)
