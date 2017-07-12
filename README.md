@@ -140,7 +140,7 @@ If you plan on using this and one of the formers in the same project, then be su
 
 ## License
 
-The source code is provided under the [MIT License](https://en.wikipedia.org/wiki/MIT_License).
+The source code is provided under the [MIT License](https://en.wikipedia.org/wiki/MIT_License).<br>
 A copy of the MIT license in written form comes in the download of this library.
 
 The JUCE framework itself is licensed separately, see the [JUCE website](https://juce.com) for more information.
@@ -149,10 +149,8 @@ The JUCE framework itself is licensed separately, see the [JUCE website](https:/
 
 ## Credits
 
-The original **DSP Filters** library is Copyright &copy; 2009 by Vinnie Falco
-
-The **Linux** adaptation of it is Copyright &copy; 2012 by Bernd Porr
-
+The original **DSP Filters** library is Copyright &copy; 2009 by Vinnie Falco<br>
+The **Linux** adaptation of it is Copyright &copy; 2012 by Bernd Porr<br>
 This **JUCE** optimized version is Copyright &copy; 2017 Rob Clifton-Harvey
 
 -------------------------------------------------------------------------------------------------------
