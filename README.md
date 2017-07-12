@@ -46,9 +46,9 @@ I also don't enjoy setting up single filters for every channel, especially when 
 
 There are some multi-channel and per-buffer methods that are part of the original **DSPFilters** code, I am aware of those. However, they are meant to operate on float arrays which are not "native" to JUCE, as JUCE uses its own data type [AudioSampleBuffer](https://www.juce.com/doc/classAudioBuffer).
 
-Since JUCE's [AudioSampleBuffers](https://www.juce.com/doc/classAudioBuffer) are capable of many more things than float arrays, I have created wrapper classes that will make them easier to process. This allows the code to stay "native" to JUCE and eliminates the need for loops and float array extraction.
+Since JUCE's **AudioSampleBuffers** are capable of many more things than float arrays, I have created wrapper classes that will make them easier to process. This allows the code to stay "native" to JUCE and eliminates the need for loops and float array extraction.
 
-These wrappers automatically instantiate as many filters as there are channels in the passed [AudioSampleBuffer](https://www.juce.com/doc/classAudioBuffer), and loop through it while applying the filters to all the contained sample data.
+These wrappers automatically instantiate as many filters as there are channels in the passed **AudioSampleBuffers**, and loop through it while applying the filters to all the contained sample data.
 
 #### Remember this?
 ```c++
@@ -106,7 +106,7 @@ Now that your filter is instantiated, you need to tell it what sample rate and f
 lpf.setup(getSampleRate(),cutoffFreq);
 ```
 
-Finally send an AudioSampleBuffer into it in ***processBlock***:
+Finally send an **AudioSampleBuffer** into it in ***processBlock***:
 ```c++
 lpf.process(&buffer);
 ```
@@ -134,7 +134,7 @@ I have omitted lots of the originally included data of the former distributions,
 
 Because Bernd Porr's adadptation changes the structure so deeply, like renaming class methods and removing the entire Design aspect, it's impossible to use this JUCE-ified version with the original DSPFilters library "out of the box". I tried it, but eventually had to resign. It would mean making such numerous edits to the original DSPFilters library, that I would've had to include a customized version with this one anyway.
 
-If you plan on using this and one of the formers in the same project, then be sure to put this one into another namespace than Dsp (Falco) or Iir (Porr).
+If you plan on using this and one of the formers in the same project, then be sure to put this one into another namespace than **Dsp** (Falco) or **Iir** (Porr). The default namespace for this library is **DSP**.
 
 -------------------------------------------------------------------------------------------------------
 
