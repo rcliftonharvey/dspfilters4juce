@@ -46,7 +46,7 @@ I also don't enjoy setting up single filters for every channel, especially when 
 
 There are some multi-channel and per-buffer methods that are part of the original **DSPFilters** code, I am aware of those. However, they are meant to operate on float arrays which are not "native" to JUCE, as JUCE uses its own data type [AudioSampleBuffer](https://www.juce.com/doc/classAudioBuffer).
 
-Since JUCE's **AudioSampleBuffer** is capable of many more things than float arrays, I have created wrapper classes that will make them easier to process. This allows the code to stay "native" to JUCE and it eliminates the need for loops and float array extraction.
+Since JUCE's **AudioSampleBuffers** are capable of many more things than float arrays, I have created wrapper classes that will make them easier to process. This allows the code to stay "native" to JUCE and it eliminates the need for loops and float array extraction.
 
 These wrappers automatically instantiate as many filters as there are channels in the passed **AudioSampleBuffer**, and loop through it while applying the filters to all the contained sample data.
 
@@ -73,7 +73,7 @@ filter.process(&buffer,getSampleRate(),filterFreq);
 ```
 
 No more *for* loops, no more filter counting, no more temporary float arrays.<br>
-What more can you wish for? :)
+What more could you want? :)
 
 -------------------------------------------------------------------------------------------------------
 
@@ -84,7 +84,8 @@ Add all the files from the [DSPFilters4JUCE](https://github.com/rcliftonharvey/d
 #include "DSPFilters.h"
 ```
 
-That's all to get you started.
+Depending on your compiler and workspace settings, you may have to adjust the include path for this file.<br>
+But theoretically, this is all you need to get you started.<br>
 The filters are now available in the **DSP::** namespace. (Unless you changed it.)
 
 Instantiate a filter wrapper class in **PluginProcessor.h**:
