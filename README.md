@@ -72,7 +72,7 @@ for(unsigned int channel=0;channel<buffer.getNumChannels();++channel)
 filter.process(&buffer,getSampleRate(),filterFreq);
 ```
 
-No more for loops, no more filter counting, no more temporary float arrays.
+No more *for* loops, no more filter counting, no more temporary float arrays.<br>
 What more can you wish for? :)
 
 -------------------------------------------------------------------------------------------------------
