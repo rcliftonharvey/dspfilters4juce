@@ -10,7 +10,7 @@
 4. [How to use](https://github.com/rcliftonharvey/dspfilters4juce/blob/master/README.md#how-to.use)
 5. [Example project](https://github.com/rcliftonharvey/dspfilters4juce/blob/master/README.md#example-project)
 6. [Notes](https://github.com/rcliftonharvey/dspfilters4juce/blob/master/README.md#notes)
-7. [Licence](https://github.com/rcliftonharvey/dspfilters4juce/blob/master/README.md#licence)
+7. [License](https://github.com/rcliftonharvey/dspfilters4juce/blob/master/README.md#license)
 8. [Credits](https://github.com/rcliftonharvey/dspfilters4juce/blob/master/README.md#credits)
 
 -------------------------------------------------------------------------------------------------------
@@ -21,13 +21,13 @@ This is a powerful filter library which implements all standard IIR filters such
 
 This library has been adapted from Bernd Porr's Linux port of Vinnie Falco's **DSPFilters**.
 
-Vinnie Falco's original **DSPFilters** can be found here:
+Vinnie Falco's original **DSPFilters** can be found here:<br>
 [https://github.com/vinniefalco/DSPFilters]
 
-Bernd Porr's Linux port of it can be found here:
+Bernd Porr's Linux port of it can be found here:<br>
 [https://github.com/berndporr/iir1]
 
-Rob Clifton-Harvey's version (this) is kept here:
+Rob Clifton-Harvey's JUCE optimized version (this one) is kept here:<br>
 [https://github.com/rcliftonharvey/dspfilters4juce]
 
 -------------------------------------------------------------------------------------------------------
@@ -138,12 +138,12 @@ If you plan on using this and one of the formers in the same project, then be su
 
 -------------------------------------------------------------------------------------------------------
 
-## Licence
+## License
 
 The source code is provided under the [MIT License](https://en.wikipedia.org/wiki/MIT_License).
 A copy of the MIT license in written form comes in the download of this library.
 
-The JUCE framework itself is licenses separately, see the [JUCE website](https://juce.com) for more information.
+The JUCE framework itself is licensed separately, see the [JUCE website](https://juce.com) for more information.
 
 -------------------------------------------------------------------------------------------------------
 
