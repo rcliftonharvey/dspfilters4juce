@@ -124,7 +124,7 @@ Doing this will update the filter's settings first, then process the buffer with
 
 ## Example project
 
-For a real world example, check out the [DSPFilters4JUCEDemo](https://github.com/rcliftonharvey/dspfilters4juce/DSPFilters4JUCEDemo) project.
+For a real world example, check out the [DSPFilters4JUCEDemo](https://github.com/rcliftonharvey/dspfilters4juce/tree/master/DSPFilters4JUCEDemo) project.
 
 -------------------------------------------------------------------------------------------------------
 
