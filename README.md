@@ -34,7 +34,7 @@ Rob Clifton-Harvey's JUCE optimized version (this one) is kept here:<br>
 
 ## Important
 
-I created his version of **DSPFilters** to be used with the [JUCE](https://www.juce.com/) framework. All the wrapper classes rely on functionality in JUCE, you'll have a *seriously* hard time trying to get this to run without it...
+I created this version of **DSPFilters** to be used with the [JUCE](https://www.juce.com/) framework. All the wrapper classes rely on functionality in JUCE, you'll have a *seriously* hard time trying to get this to run without it...
 
 -------------------------------------------------------------------------------------------------------
 
