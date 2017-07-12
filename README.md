@@ -116,7 +116,7 @@ If you're lazy like me, you may want to do all that in a *single line* in ***pro
 lpf.process(&buffer,sampleRate,cutoffFreq,etc.);
 ```
 
-Doing this will update the filter's settings first, then process it.
+Doing this will update the filter's settings first, then process the buffer with it.
 
 *Don't worry about constantly pushing values into the process() method, the filter wrappers are designed to only ever bother the filters about coefficient updates when the values actually change. If you send the same sample rate and cutoff frequency into process() 200 times and they're always the same, the filters won't care. If the sample rate or cutoff change on the 201st time, then the filters will update.*
 
