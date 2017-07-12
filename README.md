@@ -21,7 +21,7 @@ This is a powerful filter library which implements all standard IIR filters such
 
 This library has been adapted from Bernd Porr's Linux port of Vinnie Falco's **DSPFilters**.
 
-Vinnie Falco's original **DSPFilters** can be found here:<br>
+Vinnie Falco's original **DSPFilters** library can be found here:<br>
 [https://github.com/vinniefalco/DSPFilters]
 
 Bernd Porr's Linux port of it can be found here:<br>
