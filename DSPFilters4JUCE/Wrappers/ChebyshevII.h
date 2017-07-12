@@ -15,7 +15,7 @@
 //  Copyright (c) 2012 by Bernd Porr
 //
 //  Optimized for JUCE by Rob Clifton-Harvey
-//  https://github.com/rc-h/dspfilters4juce
+//  https://github.com/rcliftonharvey/dspfilters4juce
 //  Copyright (c) 2017 by Rob Clifton-Harvey
 //
 //  *----------------------------------------------------------------------------*
