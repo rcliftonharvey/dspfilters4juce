@@ -1,11 +1,13 @@
 # DSPFilters for JUCE
 
 
+## Description 
+
 This is a powerful filter library which implements all standard IIR filters such as Bessel, Butterworth, Elliptic and Chebychev. The data format is floating-point throughout.
 
-This library has been adapted from Bernd Porr's Linux port of Vinnie Falco's DSPFilters.
+This library has been adapted from Bernd Porr's Linux port of Vinnie Falco's **DSPFilters**.
 
-Vinnie Falco's original DSPFilters can be found here:
+Vinnie Falco's original **DSPFilters** can be found here:
 [https://github.com/vinniefalco/DSPFilters]
 
 Bernd Porr's Linux port of it can be found here:
@@ -16,22 +18,23 @@ Rob Clifton-Harvey's version (this) is kept here:
 
 -------------------------------------------------------------------------------------------------------
 
-Important
-=========
+## Important
 
 I created his version of **DSPFilters** to be used with the [JUCE](https://www.juce.com/) framework. All the wrapper classes rely on functionality in JUCE, you'll have a *seriously* hard time trying to get this to run without it...
 
 -------------------------------------------------------------------------------------------------------
 
-The Vinnie Falco and Bernd Porr versions were fine, but the filters needed to be calculated on a per-sample basis, which I am not a fan of. Having *for every channel* and *for every sample* loops over and over in ***processBlock*** is just clutter in the one place where there shouldn't be any clutter.
+## Introduction
 
-I also don't enjoy setting up single filters for every channel, especially when they're all the same kind and it's not clear right away how many channels my processor will have to handle. Or worse, setting up arrays of them and keeping track of states...
+The Vinnie Falco and Bernd Porr versions were fine, but the filters needed to be calculated on a per-sample basis, which I am not a fan of. Having *for-every-channel* and *for-every-sample* loops over and over in ***processBlock*** is just clutter in the one place where there shouldn't be any clutter.
 
-There are some multi-channel and per-buffer methods that are part of the original DSPFilters code, I am aware of those. However, they are meant to operate on float arrays which are not "native" to JUCE, as JUCE uses its own data type [AudioSampleBuffer](https://www.juce.com/doc/classAudioBuffer).
+I also don't enjoy setting up single filters for every channel, especially when they're all the same kind and it's not clear right away how many channels my processor will have to handle. Or worse, having to set up arrays for them and managing to keep track of all their various states...
 
-Since JUCE's AudioSampleBuffers are capable of many more things than float arrays, I have created wrapper classes that will make AudioSampleBuffers easier to process, eliminating the need for loops and float array extraction and allowing the code to stay "native" to JUCE.
+There are some multi-channel and per-buffer methods that are part of the original **DSPFilters** code, I am aware of those. However, they are meant to operate on float arrays which are not "native" to JUCE, as JUCE uses its own data type [AudioSampleBuffer](https://www.juce.com/doc/classAudioBuffer).
 
-These wrappers automatically instantiate as many filters as there are channels in the passed AudioSampleBuffer, and loop through the Buffer while applying the filters to all the samples data inside it.
+Since JUCE's [AudioSampleBuffers](https://www.juce.com/doc/classAudioBuffer) are capable of many more things than float arrays, I have created wrapper classes that will make them easier to process. This allows the code to stay "native" to JUCE and eliminates the need for loops and float array extraction.
+
+These wrappers automatically instantiate as many filters as there are channels in the passed [AudioSampleBuffer](https://www.juce.com/doc/classAudioBuffer), and loop through it while applying the filters to all the contained sample data.
 
 #### Remember this?
 ```c++
@@ -56,15 +59,11 @@ filter.process(&buffer,getSampleRate(),filterFreq);
 ```
 
 No more for loops, no more filter counting, no more temporary float arrays.
+What more can you wish for? :)
 
 -------------------------------------------------------------------------------------------------------
 
-For a real world example, check out the [DSPFilters4JUCEDemo](https://github.com/rcliftonharvey/dspfilters4juce/DSPFilters4JUCEDemo) project.
-
--------------------------------------------------------------------------------------------------------
-
-# How to use:
-===========
+## How to use
 
 Add all the files from the [DSPFilters4JUCE](https://github.com/rcliftonharvey/dspfilters4juce/DSPFilters4JUCE) folder into a group in your JUCE project. The easiest way to do this is via the files pane in the Projucer app. Then add this line to the beginning your **PluginProcessor.h**:
 ```c++
@@ -109,13 +108,15 @@ Doing this will update the filter's settings first, then process it.
 
 -------------------------------------------------------------------------------------------------------
 
-### Notes
+## Example project
+
+For a real world example, check out the [DSPFilters4JUCEDemo](https://github.com/rcliftonharvey/dspfilters4juce/DSPFilters4JUCEDemo) project.
 
 -------------------------------------------------------------------------------------------------------
+
+## Notes
 
 I have omitted lots of the originally included data of the former distributions, like demo applications and the original DSPFilters Documentation. They are not required or "fitting" for this port anymore, but you can always obtain them through the links to the original repositories of [Vinnie](https://github.com/vinniefalco/DSPFilters) and [Bernd](https://github.com/berndporr/iir1).
-
--------------------------------------------------------------------------------------------------------
 
 Because Bernd Porr's adadptation changes the structure so deeply, like renaming class methods and removing the entire Design aspect, it's impossible to use this JUCE-ified version with the original DSPFilters library "out of the box". I tried it, but eventually had to resign. It would mean making such numerous edits to the original DSPFilters library, that I would've had to include a customized version with this one anyway.
 
@@ -123,8 +124,19 @@ If you plan on using this and one of the formers in the same project, then be su
 
 -------------------------------------------------------------------------------------------------------
 
-Enjoy :)
+## Licence
+
+The source code is provided under the [MIT License](https://en.wikipedia.org/wiki/MIT_License).
+A copy of the MIT license in written form comes in the download of this library.
+
+The original **DSP Filters** library is Copyright &copy; 2009 by Vinnie Falco
+The **Linux** adaptation of it is Copyright &copy; 2012 by Bernd Porr
+This **JUCE** optimized version is Copyright &copy; 2017 Rob Clifton-Harvey
+
+The JUCE framework itself is licenses separately, see the [JUCE website](https://juce.com) for more information.
+
+-------------------------------------------------------------------------------------------------------
+
+Enjoy!
 
 Rob Clifton-Harvey
-
-2017-07-11
