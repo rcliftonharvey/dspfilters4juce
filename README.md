@@ -46,9 +46,9 @@ I also don't enjoy setting up single filters for every channel, especially when 
 
 There are some multi-channel and per-buffer methods that are part of the original **DSPFilters** code, I am aware of those. However, they are meant to operate on float arrays which are not "native" to JUCE, as JUCE uses its own data type [AudioSampleBuffer](https://www.juce.com/doc/classAudioBuffer).
 
-Since JUCE's **AudioSampleBuffers** are capable of many more things than float arrays, I have created wrapper classes that will make them easier to process. This allows the code to stay "native" to JUCE and eliminates the need for loops and float array extraction.
+Since JUCE's **AudioSampleBuffer** is capable of many more things than float arrays, I have created wrapper classes that will make them easier to process. This allows the code to stay "native" to JUCE and it eliminates the need for loops and float array extraction.
 
-These wrappers automatically instantiate as many filters as there are channels in the passed **AudioSampleBuffers**, and loop through it while applying the filters to all the contained sample data.
+These wrappers automatically instantiate as many filters as there are channels in the passed **AudioSampleBuffer**, and loop through it while applying the filters to all the contained sample data.
 
 #### Remember this?
 ```c++
