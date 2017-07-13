@@ -18,7 +18,7 @@
 
 ## Introduction 
 
-This is a powerful filter library which implements all standard IIR filters such as Bessel, Butterworth, Elliptic and Chebychev. The data format is floating-point throughout.
+This is a powerful filter library which implements all standard IIR filters, such as Bessel, Butterworth, Elliptic and Chebychev, and gives you a convenient way to use them in JUCE based projects.
 
 This library has been adapted from Bernd Porr's Linux port of Vinnie Falco's **DSPFilters**.
 
