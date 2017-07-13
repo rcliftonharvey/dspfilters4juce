@@ -1,4 +1,5 @@
-# DSPFilters optimized for JUCE
+# DSPFilters4JUCE
+#### The DSPFilters library optimized for JUCE
 
 -------------------------------------------------------------------------------------------------------
 
