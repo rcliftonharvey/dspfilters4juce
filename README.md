@@ -62,8 +62,8 @@ for(unsigned int channel=0;channel<buffer.getNumChannels();++channel)
   
   for(unsigned int sample=0;sample<buffer.getNumSamples();++sample)
   {
-    if      (channel==0) { channelData[sample]=filter1.process(sample); }
-    else if (channel==1) { channelData[sample]=filter2.process(sample); }
+    if      (channel==0) { channelData[sample]=filter1.process(channelData[sample]); }
+    else if (channel==1) { channelData[sample]=filter2.process(channelData[sample]); }
   }
 }
 ```
