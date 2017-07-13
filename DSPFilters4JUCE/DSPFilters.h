@@ -70,7 +70,7 @@
 
 //  The namespace has already been applied to all included modules. If you really
 //  want, you can comment out these 3 next lines, leaving the token DSPFILTERS as
-//  an additional namespace. Not necessary, but it's here in case you need it.
+//  an additional method of accessing the namespace.
 #ifdef DSPFILTERS
 #undef DSPFILTERS
 #endif
