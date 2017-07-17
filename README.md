@@ -126,7 +126,7 @@ Doing this will update the filter's settings first, then process the buffer with
 
 ## Example project
 
-For a real world example, check out the [DSPFilters4JUCEDemo](https://github.com/rcliftonharvey/dspfilters4juce/tree/master/DSPFilters4JUCEDemo) project.
+For a real world example, check out the included [DSPFilters4JUCEDemo](https://github.com/rcliftonharvey/dspfilters4juce/tree/master/DSPFilters4JUCEDemo) project.
 
 -------------------------------------------------------------------------------------------------------
 
@@ -134,7 +134,7 @@ For a real world example, check out the [DSPFilters4JUCEDemo](https://github.com
 
 I have omitted lots of the originally included data of the former distributions, like demo applications and the original DSPFilters Documentation. They are not required or "fitting" for this port anymore, but you can always obtain them through the links to the original repositories of [Vinnie](https://github.com/vinniefalco/DSPFilters) and [Bernd](https://github.com/berndporr/iir1).
 
-Because Bernd Porr's adadptation changes the structure so deeply, like renaming class methods and removing the entire Design aspect, it's impossible to use this JUCE-ified version with the original DSPFilters library "out of the box". I tried it, but eventually had to resign. It would mean making such numerous edits to the original DSPFilters library, that I would've had to include a customized version with this one anyway.
+Because Bernd Porr's adaptation changes the structure so deeply, like renaming class methods and removing the entire Design aspect, it's impossible to use this JUCE-ified version with the original DSPFilters library "out of the box". I tried it, but eventually had to resign. It would mean making such numerous edits to the original DSPFilters library, that I would've had to include a customized version with this one anyway.
 
 If you plan on using this and one of the formers in the same project, then be sure to put this one into another namespace than **Dsp** (Falco) or **Iir** (Porr). The default namespace for this library is **DSP**.
 
