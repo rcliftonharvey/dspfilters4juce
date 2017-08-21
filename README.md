@@ -80,7 +80,7 @@ What more could you want? :)
 
 ## How to use
 
-Add all the files from the [DSPFilters4JUCE](https://github.com/rcliftonharvey/dspfilters4juce/tree/master/DSPFilters4JUCE) folder into a group in your JUCE project. The easiest way to do this is via the files pane in the Projucer app. Then add this line to the beginning your **PluginProcessor.h**:
+Add all the files from the [DSPFilters4JUCE](https://github.com/rcliftonharvey/dspfilters4juce/tree/master/DSPFilters4JUCE) folder into a group in your JUCE project. The easiest way to do this is via the files pane in the Projucer app. Then add this line to the beginning of your **PluginProcessor.h**:
 ```c++
 #include "DSPFilters.h"
 ```
