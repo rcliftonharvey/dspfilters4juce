@@ -89,7 +89,7 @@ private:
     //
     //  This is where to instantiate the filter.
     //
-    //  In this specific case, we're after a 4-pole Butterworth lowpass.
+    //  In this specific case, we're after a 4th order Butterworth lowpass.
     //
     //  There are lots of other filter types available, they can all be
     //  instantiated and used in the same way, even the RBJ Biquads.
