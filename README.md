@@ -96,7 +96,7 @@ DSP::RBJ<DSP::LOWPASS,2> lpf;
 
 This will create a *2nd order Biquad low-pass* based on the *RBJ* formulae.
 
-*The notation for this step is identical for all filters. First you pick the filter design, then you specify a filter type and lastly you give it an order. The higher the order is, the steeper the things should get.* ***Here's a universal example:***
+*The notation for this step is identical for all filters. First you pick the filter design, then you specify a filter type and lastly you give it an order. The higher the order is, the steeper the filter's slope should get.* ***Here's a universal example:***
 ```c++
 DSP::FilterDesign<FilterType,Order> variableName;
 ```
